@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #003366, rgba(136, 136, 206, 0.7)),
+    url(https://cdn.pixabay.com/photo/2020/08/25/18/28/workplace-5517744_960_720.jpg)
+      no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  border: none;
+}
+
+#main {
+  width: 100%;
+  margin: 4rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  #main {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  #main {
+    max-width: 720px;
+  }
+}
+
+.headline {
+  padding: 0 0.6rem;
+  margin-bottom: 2rem;
+}
+
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 3px rgba(0, 0, 0, 0.4);
+}
+
+.optional {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+form {
+  background: #003366;
+  padding: 2rem 0.5rem;
+  border-radius: 5px;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-box {
+  margin: 0 auto 0.5rem auto;
+  padding: 0.3rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.25rem 0.5rem;
+  color: #495057;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: 1s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #253f5c;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.5rem;
+  min-width: 2rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 1rem;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #ff0000a9;
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+}

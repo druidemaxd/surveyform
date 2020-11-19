@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'enquête</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main id="main">
+      <div class="headline">
+        <h1 id="title">Formulaire d'enquête Ecole 241</h1>
+        <p id="description">
+          Merci de prendre le temps pour nous aider à améliorer la plateforme.
+        </p>
+      </div>
+      <form action="" id="survey-form">
+        <div class="form-box">
+          <label for="name" id="name-label">Nom</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            required
+            placeholder="Entrez votre nom"
+          />
+        </div>
+        <div class="form-box">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+            placeholder="Entrez votre email"
+          />
+        </div>
+        <div class="form-box">
+          <label for="number" id="number-label"
+            ><span class="optional">Âge</span>(facultatif)</label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="16"
+            max="50"
+            class="form-control"
+            placeholder="Entrez votre âge"
+          />
+        </div>
+        <div class="form-box">
+          <p>Quelle option décrit le mieux votre rôle actuel?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Sélectionnez le rôle actuel</option>
+            <option value="student">Étudiant(e)</option>
+            <option value="job">Travail à plein temps</option>
+            <option value="learner">Apprenant à temps plein</option>
+            <option value="preferNo">Je préfère ne pas le dire</option>
+            <option value="other">Autre</option>
+          </select>
+        </div>
+        <div class="form-box">
+          <p>Recommanderiez-vous ecole 241 à un ami?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Absolument</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Peut être</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Pas certain</label
+          >
+        </div>
+        <div class="form-box">
+          <p>Quelle est votre fonctionnalité préférée de l'école 241?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Sélectionner une option</option>
+            <option value="challenges">Défis</option>
+            <option value="projects">Projets</option>
+            <option value="community">Communauté</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        </div>
+        <div class="form-box">
+          <p>
+            Qu'aimeriez-vous voir amélioré?<span class="optional"
+              >(Cochez les cases qui vous parlent)</span
+            >
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Projets Front-end</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Projets Back-end</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Visualisation de données</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Défis</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Communauté Open Source</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Salles d'aide Gitter</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Vidéos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />Meetups de la ville</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Leadership</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            />Des cours supplémentaires</label
+          >
+        </div>
+        <div class="form-box">
+          <p>Des commentaires ou suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Entrez votre commentaire ici..."
+          ></textarea>
+        </div>
+        <div class="form-box">
+          <button type="submit" id="submit" class="submit-button">
+            Envoyez
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
